@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.owl.ui.my_post.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.owl.ui.home.home_frag"
+        android:label="fragment_home_frag"
+        tools:layout="@layout/fragment_home_frag" />
+    <activity
+        android:id="@+id/post_detailact"
+        android:name="com.example.owl.activity.post_detailact"
+        android:label="post_detailact" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.owl.ui.profile.profile"
+        android:label="fragment_profile2"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.owl.ui.my_post.my_post"
+        android:label="fragment_my_post"
+        tools:layout="@layout/fragment_my_post" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.owl.ui.logout.nav_logout"
+        android:label="nav_logout"
+        tools:layout="@layout/nav_logout" />
+</navigation>

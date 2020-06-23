@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/userimage"
+        android:padding="8dp"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/titleid"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/titleid"
+        app:srcCompat="@drawable/ic_user3" />
+
+    <EditText
+        android:id="@+id/titleid"
+        android:background="@drawable/custom_popfiels"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:maxLength="25"
+        android:inputType="textPersonName"
+        android:hint="title"
+        app:layout_constraintEnd_toStartOf="@+id/userimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/descriptionid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Description"
+        android:background="@drawable/custom_popfiels"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleid" />
+
+    <ImageView
+        android:background="#FFFFFF"
+        android:id="@+id/popimage"
+        android:layout_width="0dp"
+        android:layout_height="225dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionid"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageView
+        android:id="@+id/create_btn"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/oval_custom"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/popimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popimage"
+        app:srcCompat="@drawable/ic_edit2" />
+
+    <ProgressBar
+        android:id="@+id/popprogressBar"
+        android:padding="5dp"
+        style="?android:attr/progressBarStyle"
+        android:background="@drawable/oval_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/popimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/popimage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
